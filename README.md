@@ -1,21 +1,35 @@
-# Simulation-Based Hardware Attack Dataset
+# Simulation-Based Hardware Attack Benchmarks
 
-This repository contains the source code for the programs used to generate a simulation-based dataset aimed at detecting hardware-level attacks using AI techniques.
+This repository contains the source code and simulation outputs of various programs used to evaluate AI-based techniques for detecting hardware-level attacks. The benchmarks were compiled and executed using the gem5 simulator targeting the RISC-V architecture.
 
-These programs were compiled and simulated using the gem5 framework under the RISC-V architecture. The dataset includes:
-
-- Benign programs
-- Mlicious programs
+Each benchmark is organized into a separate folder and categorized as either **benign** or **malicious**, depending on its intended behavior. All simulations were performed using gem5’s syscall emulation (SE) mode unless system-level interaction was required.
 
 This work is part of the Master’s Thesis titled:
 
 > **Simulation-Based Evaluation of AI Techniques for Hardware Attack Detection**  
 > High-Performance Computing specialization, MIRI Master's Program  
-> Universitat Politècnica de Catalunya (UPC), Facultad de Informática de Barcelona (FIB)  
+> Universitat Politècnica de Catalunya (UPC), Facultat d'Informàtica de Barcelona (FIB)  
 > Academic Year 2025
+
+---
 
 ## Structure
 
-- `/benign/`: Simple programs with non-malicious behavior
-- `/malicious/`: Programs that simulate or approximate hardware attacks
-- `README.md`: this file
+```text
+.
+├── benign/
+│   ├── loop_sum/
+│   │   ├── loop_sum.c
+│   │   └── dataset/
+│   │       ├── run_01.csv
+│   │       ├── run_02.csv
+│   │       └── ...
+│   └── ...
+├── malicious/
+│   ├── spectrev1/
+│   │   ├── spectrev1.c
+│   │   └── dataset/
+│   │       ├── run_01.csv
+│   │       ├── run_02.csv
+│   │       └── ...
+│   └── ...
