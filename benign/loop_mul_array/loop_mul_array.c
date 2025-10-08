@@ -1,11 +1,12 @@
 #include <stdio.h>
+#define N 10
 
 int main() {
-    int a[1000];
-    for (int i = 0; i < 1000; i++) a[i] = i + 1;
+    int a[N];
+    for (int i = 0; i < N; i++) a[i] = i + 1;
 
     double prod = 1.0;
-    for (int i = 0; i < 1000; i++) {
+    for (int i = 0; i < N; i++) {
         prod *= a[i];
     }
 

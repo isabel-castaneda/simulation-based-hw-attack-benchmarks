@@ -1,8 +1,9 @@
 #include <stdio.h>
+#define N 10
 
 int main() {
     int sum = 0;
-    for (int i = 0; i < 1000000; i++) {
+    for (int i = 0; i < N; i++) {
         sum += i;
     }
     printf("Sum: %d\n", sum);
