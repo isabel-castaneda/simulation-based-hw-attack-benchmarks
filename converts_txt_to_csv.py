@@ -13,7 +13,12 @@ def convert_stats_to_csv(stats_path):
         for line in infile:
             line = line.strip()
             if not line or line.startswith('#'):
-                continue  # Skip comments and empty lines
+                continue  # # Skip comments and empty lines
+
+            # Skip the start and end lines of statistics
+            if line.startswith('---------- Begin Simulation Statistics') or \
+               line.startswith('---------- End Simulation Statistics'):
+                continue
 
             # Separate description (if any)
             parts = line.split('#', 1)
@@ -45,3 +50,4 @@ if __name__ == "__main__":
         sys.exit(1)
 
     convert_all_stats_in_directory(directory)
+

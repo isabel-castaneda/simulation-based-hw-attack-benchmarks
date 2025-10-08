@@ -1,5 +1,4 @@
 counter,value,description
-----------,Begin Simulation Statistics ----------,
 simSeconds,0.000331,Number of seconds simulated (Second)
 simTicks,331279000,Number of ticks simulated (Tick)
 finalTick,331279000,Number of ticks from beginning of simulation (restored from checkpoints and never reset) (Tick)
@@ -1039,4 +1038,3 @@ board.processor.cores.core.thread_0.numMemRefs,0,Number of Memory References (Co
 board.processor.cores.core.workload.numSyscalls,14,Number of system calls (Count)
 board.workload.inst.arm,0,number of arm instructions executed (Count)
 board.workload.inst.quiesce,0,number of quiesce instructions executed (Count)
-----------,End Simulation Statistics ----------,
