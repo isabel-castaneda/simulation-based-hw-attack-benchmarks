@@ -30,7 +30,7 @@ def convert_stats_to_csv(stats_path):
                 value = ' '.join(left[1:])  # Support multi-part values
                 csv_writer.writerow([counter, value, description])
 
-    print(f"✅ Converted: {stats_path} → {output_path}")
+    print(f"Converted: {stats_path} → {output_path}")
 
 def convert_all_stats_in_directory(directory_path):
     for root, dirs, files in os.walk(directory_path):
@@ -46,7 +46,7 @@ if __name__ == "__main__":
 
     directory = sys.argv[1]
     if not os.path.isdir(directory):
-        print("❌ Error: Provided path is not a valid directory.")
+        print("Error: Provided path is not a valid directory.")
         sys.exit(1)
 
     convert_all_stats_in_directory(directory)
