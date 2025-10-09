@@ -13,21 +13,19 @@ def convert_stats_to_csv(stats_path):
         for line in infile:
             line = line.strip()
             if not line or line.startswith('#'):
-                continue  # # Skip comments and empty lines
+                continue
 
-            # Skip the start and end lines of statistics
             if line.startswith('---------- Begin Simulation Statistics') or \
                line.startswith('---------- End Simulation Statistics'):
                 continue
 
-            # Separate description (if any)
             parts = line.split('#', 1)
             description = parts[1].strip() if len(parts) > 1 else ''
             left = parts[0].strip().split()
 
             if len(left) >= 2:
                 counter = left[0]
-                value = ' '.join(left[1:])  # Support multi-part values
+                value = ' '.join(left[1:])
                 csv_writer.writerow([counter, value, description])
 
     print(f"Converted: {stats_path} → {output_path}")
