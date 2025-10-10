@@ -21,15 +21,26 @@ This work is part of the Master’s Thesis titled:
 │   ├── loop_sum/
 │   │   ├── loop_sum.c
 │   │   └── dataset/
-│   │       ├── run_01.csv
-│   │       ├── run_02.csv
-│   │       └── ...
+│   │   	└── txts/
+│   │       	├── run_01.txt
+│   │       	├── run_02.txt
+│   │       	└── ...
+│   │   	└── csvs/
+│   │       	├── run_01.csv
+│   │       	├── run_02.csv
+│   │       	└── ...
 │   └── ...
 ├── malicious/
-│   ├── spectrev1/
+│   ├── Spectrev1/
 │   │   ├── spectrev1.c
+│   │   ├── spectrev1.h
 │   │   └── dataset/
-│   │       ├── run_01.csv
-│   │       ├── run_02.csv
-│   │       └── ...
+│   │   	└── txts/
+│   │       	├── run_01.txt
+│   │       	├── run_02.txt
+│   │       	└── ...
+│   │   	└── csvs/
+│   │       	├── run_01.csv
+│   │       	├── run_02.csv
+│   │       	└── ...
 │   └── ...
