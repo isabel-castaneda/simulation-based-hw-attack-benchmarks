@@ -1,4 +1,3 @@
-isabelc@sert-entry-3:/scratch/nas/3/isabelc$ cat build_gem5_riscv.sh
 #!/bin/bash
 #SBATCH --job-name=build_gem5
 #SBATCH --output=build_gem5.out
